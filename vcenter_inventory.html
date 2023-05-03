@@ -1,0 +1,464 @@
+<html>
+<head>
+    <!-- Load the latest version -->
+    <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+    <!-- Or load a specific version -->
+    <link rel="stylesheet" href="https://unpkg.com/@clr/ui@0.12.5/clr-ui.min.css" />
+
+    <!--CLARITY ICONS STYLE-->
+    <link rel="stylesheet" href="https://unpkg.com/clarity-icons/clarity-icons.min.css">
+
+    <!--CLARITY ICONS DEPENDENCY: CUSTOM ELEMENTS POLYFILL-->
+    <script src="https://unpkg.com/@webcomponents/custom-elements/custom-elements.min.js"></script>
+
+    <!--CLARITY ICONS API & ALL ICON SETS-->
+    <script src="https://unpkg.com/clarity-icons/clarity-icons.min.js"></script>
+</head>
+<body>
+    <header class="header header-6">
+       <font color="#FFFFFF"; style="position: absolute; top: 20px; left: 10px;" size="5">VMware VM Inventory Report</font>
+       <clr-icon shape="note" size="45"; style="position: absolute; top: 5px; left: 360px;"></clr-icon>
+    </header>
+    <div class="main-container">
+        <div class="content-container">
+            <div class="content-area">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>State</th>
+                            <th>Status</th>
+                            <th>Managed By</th>
+                            <th>Host</th>
+                            <th>Provisioned Space</th>
+                            <th>Used Space</th>
+                            <th>Host CPU</th>
+                            <th>Host Mem</th>
+                            <th>Guest Mem - %</th>
+                            <th>GuestOS</th>
+                            <!-- <th>Compatibility</th> -->
+                            <th>Memory Size</th>
+                            <th>Reservation</th>
+                            <th>CPUs</th>
+                            <th>NICs</th>
+                            <th>Uptime</th>
+                            <th>IP Address</th>
+                            <th>VMware Tools Version Status</th>
+                            <th>VMware Tools Running Status</th>
+                            <th>DNS Name</th>
+                            <th>EVC Mode</th>
+                            <th>UUID</th>
+                            <th>Notes</th>
+                            <th>Alarm Actions</th>
+                            <th>HA Protection</th>
+                            <th>Needs Consolidation</th>
+                            <!-- <th>VM Storage Policies Compliance</th>
+                            <th>Encryption</th> -->
+                            <th>TPM</th>
+                            <th>VBS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ESX6.7-2</td>
+                            <td>poweredOff
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>24 GB</td>
+                            <td>1 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>4.12890625 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                        <td>10346</td>
+                            <td>guestToolsNotRunning</td>
+                            <td>localhost</td>
+                            <td></td>
+                            <td>564d4b98-7f0a-cc50-4619-36afec0a6e35</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>CentOS Controller</td>
+                            <td>poweredOn
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>43 GB</td>
+                            <td>27 GB</td>
+                            <td>0 MHz</td>
+                            <td>640 MB</td>
+                            <td>
+                                                          6.0
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>2.0 GB</td>
+                            <td>0 MB</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>17351</td>
+                            <td>
+                                                        <td>0</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td>intel-haswell</td>
+                            <td>564d7a8d-1235-c4a8-5086-7fcad19b3950</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Centos7_tower</td>
+                            <td>poweredOff
+                            <td>gray</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>36 GB</td>
+                            <td>5 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>5.390625 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                                                                                                                                                <td>0</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td></td>
+                            <td>564d8b95-c4a1-a778-d40f-be54e2b3f818</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>CentOS_Node1</td>
+                            <td>poweredOn
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>37 GB</td>
+                            <td>26 GB</td>
+                            <td>3649 MHz</td>
+                            <td>1910 MB</td>
+                            <td>
+                                                          12.0
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>5.0 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>12040</td>
+                            <td>
+                                                        <td>0</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td>intel-haswell</td>
+                            <td>564dcfc9-6e3c-0d96-1138-ad7c8729c216</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>win2008dns</td>
+                            <td>poweredOn
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>44 GB</td>
+                            <td>17 GB</td>
+                            <td>0 MHz</td>
+                            <td>913 MB</td>
+                            <td>
+                                                          2.0
+                                                        </th>
+                            <td>Microsoft Windows Server 2008 R2 (64-bit)</td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>4.0 GB</td>
+                            <td>0 MB</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>17341</td>
+                            <td>
+                                                                                                                            2405:201:4012:d07d:436:dc33:ebba:c873</br>
+                                                                  fe80::436:dc33:ebba:c873</br>
+                                                                  192.168.29.29</br>
+                                                                                                                                                                                          2405:201:4012:d07d:111d:920b:2f5e:1c39</br>
+                                                                  fe80::111d:920b:2f5e:1c39</br>
+                                                                  192.168.29.152</br>
+                                                                                                                      <td>9541</td>
+                            <td>guestToolsRunning</td>
+                            <td>WIN-UUIT60PGCLP.area51.com</td>
+                            <td>intel-haswell</td>
+                            <td>564dd0e7-1ccb-7944-e2bb-729a64e6ce09</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Centos7awx</td>
+                            <td>poweredOff
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>80 GB</td>
+                            <td>27 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>4.59375 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                        <td>0</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td></td>
+                            <td>564d100a-451d-3510-6a02-00ccc22c0c94</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>VMware vCenter Server Appliance</td>
+                            <td>poweredOn
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>312 GB</td>
+                            <td>36 GB</td>
+                            <td>216 MHz</td>
+                            <td>9102 MB</td>
+                            <td>
+                                                          14.0
+                                                        </th>
+                            <td>Linux 4.4.234-5.ph1 VMware Photon 1.0 Photon VMware Photon 1.0 </td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>10.0 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>17164</td>
+                            <td>
+                                                                                                                            192.168.29.195</br>
+                                                                                                                      <td>2147483647</td>
+                            <td>guestToolsRunning</td>
+                            <td>area51vapp1.area51.com</td>
+                            <td>intel-haswell</td>
+                            <td>564d80dc-9f03-a201-21b3-ead19bf6060c</td>
+                            <td>VMware vCenter Server Appliance
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ESXi6.7</td>
+                            <td>poweredOff
+                            <td>gray</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>266 GB</td>
+                            <td>34 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>15.62890625 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>
+                                                                                                                                                                                                                                                                                                        <td>10346</td>
+                            <td>guestToolsNotRunning</td>
+                            <td>localhost</td>
+                            <td></td>
+                            <td>564ddb65-e4b5-8986-a564-d73856de5984</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ESX6.7-1</td>
+                            <td>poweredOff
+                            <td>green</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>54 GB</td>
+                            <td>1 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>4.2421875 GB</td>
+                            <td>0 MB</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                        <td>10346</td>
+                            <td>guestToolsNotRunning</td>
+                            <td>esx1.com</td>
+                            <td></td>
+                            <td>564d8fcb-1c2c-5f8e-0863-3ceac1a2fb68</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ubuntu_Node2</td>
+                            <td>poweredOff
+                            <td>gray</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>38 GB</td>
+                            <td>25 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>1.9609375 GB</td>
+                            <td>0 MB</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                                                                                                                                                <td>2147483647</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td></td>
+                            <td>564d9d8e-fa0c-e9e3-e599-06e8b94bbc78</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>win10</td>
+                            <td>poweredOff
+                            <td>gray</td>
+                            <td></td>
+                            <td>192.168.29.125</td>
+                            <td>52 GB</td>
+                            <td>19 GB</td>
+                            <td>0 MHz</td>
+                            <td>0 MB</td>
+                            <td>
+                                                        </th>
+                            <td></td>
+                            <!-- <td><font color="#FC0107">Compatibility</font></td> -->
+                            <td>2.0 GB</td>
+                            <td>0 MB</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>
+                                                                                                                                                                                <td>0</td>
+                            <td>guestToolsNotRunning</td>
+                            <td></td>
+                            <td></td>
+                            <td>564dc2e2-9343-15ea-890a-b761ad86000a</td>
+                            <td>
+                            <td>True</td>
+                            <td>
+                                                        </td>
+                            <td>False</td>
+                            <!-- <td><font color="#FC0107">VM Storage Policies Compliance</font></td>
+                            <td><font color="#FC0107">Encryption</font></td> -->
+                            <td>False</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
