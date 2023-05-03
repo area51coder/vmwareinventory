@@ -1,0 +1,2 @@
+# vmwareinventory
+inventory vms
